@@ -1,11 +1,13 @@
 {
  "states": [
+  "AL",
   "Connecticut",
   "Delaware",
   "GA",
   "KY",
   "MD",
   "ME",
+  "MS",
   "Massachusetts",
   "NC",
   "NH",
@@ -20,11 +22,11 @@
   "VT",
   "WV"
  ],
- "states_count": 19,
+ "states_count": 21,
  "states_goal": 50,
- "counties": 1040,
- "services": 3566,
- "facts_verified": 11333,
- "errors_found_and_reported": 1865,
+ "counties": 1189,
+ "services": 3801,
+ "facts_verified": 12115,
+ "errors_found_and_reported": 1975,
  "updated": "2026-08-24"
 }
