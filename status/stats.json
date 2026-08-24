@@ -12,14 +12,15 @@
   "OH",
   "Pennsylvania",
   "Rhode Island",
+  "VA",
   "VT",
   "WV"
  ],
- "states_count": 14,
+ "states_count": 15,
  "states_goal": 50,
- "counties": 487,
- "services": 2608,
- "facts_verified": 8201,
- "errors_found_and_reported": 1163,
+ "counties": 620,
+ "services": 2876,
+ "facts_verified": 9005,
+ "errors_found_and_reported": 1286,
  "updated": "2026-08-24"
 }
