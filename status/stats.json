@@ -2,16 +2,17 @@
  "states": [
   "Connecticut",
   "Delaware",
+  "Massachusetts",
   "New Jersey",
   "New York",
   "Pennsylvania",
   "Rhode Island"
  ],
- "states_count": 6,
+ "states_count": 7,
  "states_goal": 50,
- "counties": 166,
- "services": 1850,
- "facts_verified": 5948,
+ "counties": 180,
+ "services": 1882,
+ "facts_verified": 6074,
  "errors_found_and_reported": 515,
  "updated": "2026-08-24"
 }
