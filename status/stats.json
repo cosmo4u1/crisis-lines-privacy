@@ -10,13 +10,14 @@
   "New York",
   "Pennsylvania",
   "Rhode Island",
-  "VT"
+  "VT",
+  "WV"
  ],
- "states_count": 11,
+ "states_count": 12,
  "states_goal": 50,
- "counties": 244,
- "services": 2061,
- "facts_verified": 6476,
- "errors_found_and_reported": 860,
+ "counties": 299,
+ "services": 2175,
+ "facts_verified": 6759,
+ "errors_found_and_reported": 1038,
  "updated": "2026-08-24"
 }
