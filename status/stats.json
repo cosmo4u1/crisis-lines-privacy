@@ -3,7 +3,9 @@
   "AL",
   "Connecticut",
   "Delaware",
+  "FL",
   "GA",
+  "IN",
   "KY",
   "MD",
   "ME",
@@ -22,11 +24,11 @@
   "VT",
   "WV"
  ],
- "states_count": 21,
+ "states_count": 23,
  "states_goal": 50,
- "counties": 1189,
- "services": 3801,
- "facts_verified": 12115,
- "errors_found_and_reported": 1975,
+ "counties": 1348,
+ "services": 4399,
+ "facts_verified": 13338,
+ "errors_found_and_reported": 3603,
  "updated": "2026-08-24"
 }

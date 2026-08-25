@@ -1,4 +1,31 @@
 <title>One Light On — Live Counter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Crisis Lines is a free app for finding crisis and
+mental health help, county by county. Every figure is generated from the live
+directory. The goal is all 50 states.">
+<!-- The share card. Owner, 2026-08-24, pasting the campaign copy into Facebook:
+     "link didnt pop the image" - it could not, because none of this existed. The
+     image is EVERGREEN on purpose (tools/build_social_card.py): a link that gets
+     shared for months must not carry figures that go stale by the hour, which is
+     the same rule that keeps the numbers on this page and out of the copy. -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Crisis Lines">
+<meta property="og:title" content="Crisis Lines — a free crisis directory, county by county">
+<meta property="og:description" content="A number to call or a place to go, for the
+county you actually live in. Free forever, no ads, no accounts, no tracking. The goal
+is all 50 states - watch it fill in.">
+<meta property="og:url" content="https://cosmo4u1.github.io/crisis-lines-privacy/status/">
+<meta property="og:image" content="https://cosmo4u1.github.io/crisis-lines-privacy/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Crisis Lines mark - a figure whose arms form
+a heart - beside the words: a free directory of crisis and mental health help, county
+by county. The goal: all 50 states.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Crisis Lines — a free crisis directory, county by county">
+<meta name="twitter:description" content="A number to call or a place to go, for the
+county you actually live in. Free forever. The goal is all 50 states.">
+<meta name="twitter:image" content="https://cosmo4u1.github.io/crisis-lines-privacy/social-card.png">
 <style>
   :root { --bg:#101714; --ink:#EDE8DF; --soft:#97A8A0; --warm:#FAE2B0; --dim:#D6B070;
            --line:#2A3833; }
@@ -10,7 +37,7 @@
   .sub { color:var(--soft); margin:10px 0 34px; line-height:1.5; }
   .goal { margin:0 0 26px; }
   .goal .bar { height:14px; background:var(--line); border-radius:999px; overflow:hidden; }
-  .goal .fill { height:100%; width:42%; background:var(--dim);
+  .goal .fill { height:100%; width:46%; background:var(--dim);
                  border-radius:999px; min-width:14px; }
   .goal .label { display:flex; justify-content:space-between; color:var(--soft);
                   font-size:14px; margin-top:8px; }
@@ -37,23 +64,23 @@
 
   <div class="goal">
     <div class="bar"><div class="fill"></div></div>
-    <div class="label"><span><b>21</b> of <b>50</b> states</span>
+    <div class="label"><span><b>23</b> of <b>50</b> states</span>
     <span>the goal: all of them</span></div>
   </div>
 
   <div class="grid">
-    <div class="card"><div class="n">1,189</div>
+    <div class="card"><div class="n">1,348</div>
       <div class="l">counties covered — every county in every state we enter</div></div>
-    <div class="card"><div class="n">3,801</div>
+    <div class="card"><div class="n">4,399</div>
       <div class="l">services listed</div></div>
-    <div class="card"><div class="n">12,115</div>
+    <div class="card"><div class="n">13,338</div>
       <div class="l">phone numbers &amp; addresses traced to their sources</div></div>
-    <div class="card"><div class="n">1,975</div>
+    <div class="card"><div class="n">3,603</div>
       <div class="l">errors found in official state directories — documented and
       reported back to the states</div></div>
   </div>
 
-  <p class="states"><b>Covered so far:</b> AL, Connecticut, Delaware, GA, KY, MD, ME, MS, Massachusetts, NC, NH, New Jersey, New York, OH, Pennsylvania, Rhode Island, SC, TN, VA, VT, WV.</p>
+  <p class="states"><b>Covered so far:</b> AL, Connecticut, Delaware, FL, GA, IN, KY, MD, ME, MS, Massachusetts, NC, NH, New Jersey, New York, OH, Pennsylvania, Rhode Island, SC, TN, VA, VT, WV.</p>
 
   <footer>
     The app is free forever — no ads, no accounts, no tracking. It stores one thing:
