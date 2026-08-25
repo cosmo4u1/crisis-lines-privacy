@@ -9,6 +9,7 @@
   "KY",
   "MD",
   "ME",
+  "MO",
   "MS",
   "Massachusetts",
   "NC",
@@ -22,13 +23,14 @@
   "TN",
   "VA",
   "VT",
+  "WI",
   "WV"
  ],
- "states_count": 23,
+ "states_count": 25,
  "states_goal": 50,
- "counties": 1348,
- "services": 4399,
- "facts_verified": 13338,
- "errors_found_and_reported": 3603,
+ "counties": 1535,
+ "services": 4720,
+ "facts_verified": 14442,
+ "errors_found_and_reported": 5851,
  "updated": "2026-08-24"
 }
