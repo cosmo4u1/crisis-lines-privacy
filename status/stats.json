@@ -1,6 +1,7 @@
 {
  "states": [
   "AL",
+  "AR",
   "Connecticut",
   "Delaware",
   "FL",
@@ -8,6 +9,7 @@
   "IA",
   "IL",
   "IN",
+  "KS",
   "KY",
   "MD",
   "ME",
@@ -17,10 +19,12 @@
   "MS",
   "Massachusetts",
   "NC",
+  "NE",
   "NH",
   "New Jersey",
   "New York",
   "OH",
+  "OK",
   "Pennsylvania",
   "Rhode Island",
   "SC",
@@ -30,11 +34,11 @@
   "WI",
   "WV"
  ],
- "states_count": 29,
+ "states_count": 33,
  "states_goal": 50,
- "counties": 1906,
- "services": 5893,
- "facts_verified": 16797,
- "errors_found_and_reported": 927,
- "updated": "2026-08-24"
+ "counties": 2256,
+ "services": 7177,
+ "facts_verified": 20262,
+ "errors_found_and_reported": 1268,
+ "updated": "2026-08-25"
 }
