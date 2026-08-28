@@ -8,6 +8,7 @@
   "Colorado",
   "Connecticut",
   "Delaware",
+  "District of Columbia",
   "Florida",
   "Georgia",
   "Hawaii",
@@ -51,11 +52,11 @@
   "Wisconsin",
   "Wyoming"
  ],
- "states_count": 50,
+ "states_count": 51,
  "states_goal": 50,
- "counties": 3142,
- "services": 9902,
- "facts_verified": 27430,
- "errors_found_and_reported": 1582,
- "updated": "2026-08-25"
+ "counties": 3143,
+ "services": 9988,
+ "facts_verified": 27782,
+ "errors_found_and_reported": 1650,
+ "updated": "2026-08-28"
 }
