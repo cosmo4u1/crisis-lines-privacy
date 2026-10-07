@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Crisis Lines for iPhone</title>
+<meta name="description" content="Free crisis and mental health numbers for your county. Install the iPhone test version in two steps.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Crisis Lines for iPhone">
+<meta property="og:description" content="Free crisis and mental health numbers for your county. Install the iPhone test version in two steps.">
+<meta property="og:url" content="https://cosmo4u1.github.io/crisis-lines-privacy/iphone/">
+<meta property="og:image" content="https://cosmo4u1.github.io/crisis-lines-privacy/iphone/card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<style>
+  /* Same colours as the app itself (App.js palette): pale sage ground, glassy white
+     cards, sage green for anything you can tap, black emergency band. Secondary text is
+     a shade darker than the app's so it clears 4.5:1 on a small web page. */
+  :root {
+    --paper:   #E9F0EC;
+    --glass:   rgba(255,255,255,0.74);
+    --edge:    rgba(255,255,255,0.95);
+    --shadow:  rgba(34,54,47,0.12);
+    --ink:     #22362F;
+    --soft:    #4F625A;
+    --rule:    #DDE6E1;
+    --signal:  #2C7A6A;
+    --on-signal: #FFFFFF;
+    --flag-bg: #FFF5DB;
+    --flag-ink:#8F6B1C;
+    --flag-text:#3E3520;
+    --band:    #000000;
+    --band-ink:#FFFFFF;
+    --band-soft:#B9B9B9;
+    --tile:    rgba(255,255,255,0.12);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:   #121A17;
+      --glass:   rgba(255,255,255,0.07);
+      --edge:    rgba(255,255,255,0.14);
+      --shadow:  rgba(0,0,0,0.5);
+      --ink:     #E8EFEA;
+      --soft:    #A3B3AC;
+      --rule:    #2A3833;
+      --signal:  #7FC8B5;
+      --on-signal: #0E1A16;
+      --flag-bg: #2A2414;
+      --flag-ink:#D9B44F;
+      --flag-text:#E8E0C8;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:   #121A17;
+    --glass:   rgba(255,255,255,0.07);
+    --edge:    rgba(255,255,255,0.14);
+    --shadow:  rgba(0,0,0,0.5);
+    --ink:     #E8EFEA;
+    --soft:    #A3B3AC;
+    --rule:    #2A3833;
+    --signal:  #7FC8B5;
+    --on-signal: #0E1A16;
+    --flag-bg: #2A2414;
+    --flag-ink:#D9B44F;
+    --flag-text:#E8E0C8;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: var(--paper);
+    color: var(--ink);
+    font: 17px/1.5 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+  }
+
+  /* The emergency band is first, as it is in the app. Someone who lands here in trouble
+     should not have to read an install page first. */
+  .band {
+    background: var(--band);
+    color: var(--band-ink);
+    padding: 12px 16px;
+    padding-top: max(12px, env(safe-area-inset-top));
+  }
+  .band-inner {
+    max-width: 30rem; margin: 0 auto;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .band a {
+    color: var(--band-ink);
+    background: var(--tile);
+    border-radius: 11px;
+    padding: 7px 14px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.1;
+    letter-spacing: -0.4px;
+  }
+  .band a:focus-visible { outline: 3px solid var(--band-ink); outline-offset: 2px; }
+  .band .say { font-size: 13px; line-height: 1.35; color: var(--band-soft); flex: 1; }
+
+  main {
+    max-width: 30rem; margin: 0 auto;
+    padding: 22px 16px calc(36px + env(safe-area-inset-bottom));
+  }
+
+  .head { display: flex; align-items: center; gap: 14px; margin: 0 0 12px; }
+  .head img {
+    width: 64px; height: 64px; flex: none;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px var(--shadow);
+  }
+  h1 {
+    margin: 0;
+    font: 700 27px/1.12 ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    letter-spacing: -0.3px;
+    text-wrap: balance;
+  }
+  .lead { margin: 0 0 18px; color: var(--soft); font-size: 16.5px; }
+
+  .steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+  .step {
+    background: var(--glass);
+    border: 1px solid var(--edge);
+    border-radius: 18px;
+    box-shadow: 0 10px 26px var(--shadow);
+    padding: 16px;
+    display: grid; gap: 10px;
+  }
+  .step h2 {
+    margin: 0; display: flex; align-items: center; gap: 10px;
+    font: 700 19px/1.2 ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  }
+  .num {
+    flex: none; width: 28px; height: 28px; border-radius: 50%;
+    display: grid; place-items: center;
+    background: var(--signal); color: var(--on-signal);
+    font-size: 15px; font-weight: 700;
+  }
+  .step p { margin: 0; color: var(--soft); font-size: 15.5px; }
+
+  .btn {
+    display: flex; align-items: center; justify-content: center;
+    min-height: 56px; padding: 0 20px;
+    border-radius: 14px;
+    background: var(--signal); color: var(--on-signal);
+    font-size: 18px; font-weight: 700; text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .btn:active { filter: brightness(0.92); }
+  .btn:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+
+  .note {
+    margin: 16px 2px 0;
+    color: var(--soft); font-size: 14.5px;
+  }
+  .note strong { color: var(--ink); }
+
+  /* Shown only where a mouse is the main pointer, i.e. a computer: TestFlight installs
+     onto an iPhone, so the page tells a desktop visitor to switch devices. */
+  .desk {
+    display: none;
+    margin: 0 0 14px;
+    padding: 12px 14px;
+    border-radius: 14px;
+    background: var(--flag-bg); color: var(--flag-text);
+    font-size: 15px;
+  }
+  .desk strong { color: var(--flag-ink); }
+  @media (hover: hover) and (pointer: fine) { .desk { display: block; } }
+
+  footer {
+    margin-top: 26px; padding-top: 16px;
+    border-top: 1px solid var(--rule);
+    color: var(--soft); font-size: 14px;
+  }
+  footer a { color: var(--signal); }
+</style>
+</head>
+<body>
+
+<div class="band">
+  <div class="band-inner">
+    <a href="tel:988" aria-label="Call 988">988</a>
+    <a href="tel:911" aria-label="Call 911">911</a>
+    <span class="say">Call or text 988, any hour. In immediate danger, call 911.</span>
+  </div>
+</div>
+
+<main>
+  <div class="head">
+    <img src="icon.png" width="64" height="64" alt="">
+    <h1>Crisis Lines for iPhone</h1>
+  </div>
+  <p class="lead">Free crisis and mental health numbers for your county. Test it on your iPhone.</p>
+
+  <p class="desk"><strong>On a computer?</strong> Open this page on your iPhone. TestFlight installs onto the phone.</p>
+
+  <ol class="steps">
+    <li class="step">
+      <h2><span class="num" aria-hidden="true">1</span>Get TestFlight</h2>
+      <p>Apple&rsquo;s free app for trying new apps. Already have it? Skip to step 2.</p>
+      <a class="btn" href="https://apps.apple.com/us/app/testflight/id899247664">Get TestFlight</a>
+    </li>
+    <li class="step">
+      <h2><span class="num" aria-hidden="true">2</span>Get Crisis Lines</h2>
+      <p>After TestFlight is installed, tap here. It opens in TestFlight: tap <strong>Accept</strong>, then <strong>Install</strong>.</p>
+      <a class="btn" href="https://testflight.apple.com/join/K8cKnfXc">Get Crisis Lines</a>
+    </li>
+  </ol>
+
+  <p class="note"><strong>Apple shows a long page of instructions?</strong> TestFlight isn&rsquo;t installed yet. Do step 1, then come back and tap step 2.</p>
+  <p class="note">Something looks wrong or out of date? Tell whoever sent you this link, and which county.</p>
+
+  <footer>
+    Free. No account, no ads, no tracking. &middot; <a href="../">Privacy policy</a>
+  </footer>
+</main>
+
+</body>
+</html>
