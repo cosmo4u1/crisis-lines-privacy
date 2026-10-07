@@ -164,6 +164,9 @@
     color: var(--soft); font-size: 14.5px;
   }
   .note strong { color: var(--ink); }
+  /* The code is case-sensitive and gets typed by hand, so give it room, and let one tap
+     select all of it for copying. */
+  .note .code { letter-spacing: 1px; font-size: 16px; -webkit-user-select: all; user-select: all; }
 
   /* Shown only where a mouse is the main pointer, i.e. a computer: TestFlight installs
      onto an iPhone, so the page tells a desktop visitor to switch devices. */
@@ -219,6 +222,7 @@
   </ol>
 
   <p class="note"><strong>Apple shows a long page of instructions?</strong> TestFlight isn&rsquo;t installed yet. Do step 1, then come back and tap step 2.</p>
+  <p class="note"><strong>TestFlight asks for an invite code?</strong> Tap <strong>Redeem</strong> and type <strong class="code">K8cKnfXc</strong>.</p>
   <p class="note">Something looks wrong or out of date? Tell whoever sent you this link, and which county.</p>
 
   <footer>
